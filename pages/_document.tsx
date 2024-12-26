@@ -10,14 +10,11 @@ export default function Document() {
         <meta name="title" content="Nestar Demo" />
         <meta name="robots" content="index,follow" />
         <link rel="icon" type="image/png" href="/img/logo/favicon.svg" />
-
-
-        // SEO
+        /**SEO */
         <meta
           name="keyword"
           content={"nestar, nestar.uz, devex, mern, mern nestjs fullstack"}
         />
-
         <meta
           name="description"
           content={"Buy and sell properties anywhere anytime in South Korea"}
