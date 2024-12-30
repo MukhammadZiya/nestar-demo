@@ -10,5 +10,4 @@ const PropertyList: NextPage = () => {
     </>
   );
 };
-
 export default withLayoutBasic(PropertyList);

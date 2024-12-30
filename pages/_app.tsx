@@ -2,6 +2,7 @@ import { light } from "@/scss/MaterialTheme";
 import type { AppProps } from "next/app";
 import { useState } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import "../scss/app.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   //@ts-ignore
