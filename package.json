@@ -1,5 +1,5 @@
 {
-  "name": "nestar-demo",
+  "name": "nestar-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
+    "@apollo/client": "^3.5.10",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.4.2",
     "@mui/material": "^5.10.1",
+    "graphql": "^15.5.0",
     "next": "14.2.1",
+    "npm": "^10.8.1",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.49.9",
@@ -21,6 +24,7 @@
     "swiper": "^8.3.1"
   },
   "devDependencies": {
+    "@types/estree": "^1.0.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -28,3 +32,4 @@
     "typescript": "^5"
   }
 }
+
