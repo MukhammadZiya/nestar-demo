@@ -1,6 +1,7 @@
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import Filter from "@/libs/components/property/Filter";
 import PropertyCard from "@/libs/components/property/PropertyCard";
+import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import {
   Box,
@@ -14,8 +15,12 @@ import { NextPage } from "next";
 import { useState } from "react";
 
 const PropertyList: NextPage = () => {
-  console.log("PropertyList COMPONENT - PAGES ROUTER");
-  const [properties, setProperties] = useState<number[]>([1, 2, 3, 4, 5, 6]);
+  const device = useDeviceDetect();
+  if (device === "mobile") {
+    return <Stack>PROPERTY LIST MOBILE</Stack>;
+  } else {
+    console.log("PropertyList COMPONENT - PAGES ROUTER");
+    const [properties, setProperties] = useState<number[]>([1, 2, 3, 4, 5, 6]);
 
     return (
       <div id={"property-list-page"} style={{ position: "relative" }}>
@@ -57,5 +62,6 @@ const PropertyList: NextPage = () => {
         </Stack>
       </div>
     );
-  };
+  }
+};
 export default withLayoutBasic(PropertyList);
